@@ -19,27 +19,38 @@
 
 
     <div class="row">
-      <div class="col-md-2 col-lg-2" >
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" >
 
-        <img id = "mePic" src = "Images/me.jpg">
+
+
+        <img id = "mePic" src = "Images/me.jpg" onclick ="imgMessage()">
+        <div id = "bio">
         <div id ="myName">James Holland</div>
-        <div id ="bio">
+
          portfolio
         </div>
 
 
       <div id ="menu">
 
-        <li  class ="menuList"><a class ="menuText" href="https://github.com/hollandjames"><span class="menuItem">Github</span><img class ="hvr-bob"src="Images/github.png"></a></li>
-        <li  class ="menuList"><a class ="menuText" href="https://twitter.com/J__holla"><span class="menuItem">Twitter</span><img class ="hvr-bob" src="Images/twitter.png"></a></li>
-        <li  class ="menuList"><a class ="menuText"href="https://www.reddit.com/user/ViktorVamos/"><span class="menuItem">Reddit</span><img class ="hvr-bob" src="Images/reddit.png"></a></li>
+        <li  class ="menuList"><a  href="https://github.com/hollandjames"><img class ="hvr-bob"src="Images/github.png"></a></li>
+        <li  class ="menuList"><a  href="https://twitter.com/J__holla"><img class ="hvr-bob" src="Images/twitter.png"></a></li>
+        <li  class ="menuList"><a  href="https://www.reddit.com/user/ViktorVamos/"><img class ="hvr-bob" src="Images/reddit.png"></a></li>
+      </div>
+
+      <div id = "navbar">
+
+<li ><a class = "navItem" href="About/index.html"> About</a></li>
+<li> <a class ="navItem"href="Research/index.html">Research</a></li>
+
       </div>
 
       </div>
 
 
 
-      <div class="col-md-10 col-lg-10">
+      <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+        <div class ="projectList">
         <h1>Projects</h1>
         <h1>Projects</h1>
         <h1>Projects</h1>
@@ -49,7 +60,7 @@
         <h1>Projects</h1>
         <h1>Projects</h1>
 
-
+      </div>
 
       </div>
 
@@ -65,7 +76,17 @@
 
 
 </div>
+<script>
 
+  function imgMessage()
+//extra stuff here
+//remove right click option?
+
+  {
+    window.alert("Don't click on my face!");
+  }
+
+</script>
 
 </body>
 </html>
