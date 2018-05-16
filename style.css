@@ -1,0 +1,185 @@
+
+
+#heading{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    padding-top:50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#mePic{
+  border-radius:50%;
+  width: 100px;
+
+  margin-bottom:10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 2px solid #000000;
+
+}
+.menuList{
+    padding:5px;
+    list-style-type: none;
+    text-align: center;
+    display:inline;
+
+}
+
+#myName{
+    font-weight: bold;
+    font-size: large;
+
+
+}
+#menu{
+  padding-top: 20px;
+  padding-bottom: 50px;
+  width: 115px;
+  /* text-align: center; */
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+}
+.logos{
+    vertical-align: baseline;
+    width:20px;
+}
+.projectList{
+  margin-left:50px;
+}
+#bio{
+
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width:115px;
+
+
+
+}
+#navbar{
+
+  width: 115px;
+  /* text-align: center; */
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  list-style-type: none;
+  font-size:large;
+
+}
+
+@-webkit-keyframes hvr-bob {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes hvr-bob {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @-webkit-keyframes hvr-bob-float {
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes hvr-bob-float {
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  .hvr-bob {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    vertical-align: baseline;
+    width:26px;
+  }
+
+  .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+    -webkit-animation-name: hvr-bob-float, hvr-bob;
+    animation-name: hvr-bob-float, hvr-bob;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+  }
+
+
+
+
+.navItem:active{
+  font-style:bold;
+}
+.navItem:hover{
+  text-decoration:none;
+  color:black;
+  font-style:bold;
+
+}
+.navItem{
+  color:black;
+}
+
+.menuItem:hover ~ .hvr-bob {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+
+
+
+
