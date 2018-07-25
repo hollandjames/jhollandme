@@ -1,71 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>J Holland</title>
+    <script type="text/javascript" src="redirection-mobile.js"></script><script type="text/javascript">// <![CDATA[
+      SA.redirection_mobile ({
+       mobile_url : "jholland.me/mobile",
+      tablet_redirection: "true",
+      tablet_host: "jholland.me/mobile",
+       });
+       </script>
+  <title>Holla</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="icon" href="Images/me.jpg">
+
+
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="particles.css">
 
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
-  
+
+
 
   <script src="jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+  <script src ="ballmotion.js"></script>
+
 </head>
-<body>
+<body >
+
+  <div id="particles-js">
 
 <div class="container">
-
-
-
     <div class="row">
+      <div id ="profileCol">
       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" >
 
+          <div class="animatedImage">
+
+              <div class="pen">
+              <img id = "mePic" src = "Images/me.jpg" class="box">
+              </div>
+          </div>
 
 
-        <img id = "mePic" src = "Images/me.jpg" onclick ="imgMessage()">
+
         <div id = "bio">
         <div id ="myName">James Holland</div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p><p>-----BEGIN PGP SIGNED MESSAGE-----<br />
+                Hash: SHA256</p>
 
-         portfolio
+               <p> not an imposter...</p>
+
+               <p> james holland 2/7/2018</p>
+
+               <p> 584E1BF9F5869536F3C32F157E09F95E1F0B8BBE<br />
+                -----BEGIN PGP SIGNATURE-----</p>
+
+               <p> iQEzBAEBCAAdFiEEWE4b+fWGlTbzwy8Vfgn5Xh8Li74FAls5gGkACgkQfgn5Xh8L<br />
+                i74LIQf/X7Og7E3OsHrwZvHGjepBlEr91zVuyBVlg4EgtwOeXV+aIrSwP/9z+ByW<br />
+                bfacuThzHz7L0pefMcsPxmZMiIRtgClne/HrawAaVEscqHKSsSvqRd3ggwtiy9Rp<br />
+                Pb+hTlBh8O74Vrn0h7cG0QDGes3QWYnrdsjJLt7B5qCCRk16Yoc4zd7uIIuk3o6i<br />
+                1gAS2oOcXLCQYO79lyLjh6q7BmpJZNtxtTh7ke5UwK0DPMM8V/qKroDwXjCuF6v+<br />
+                ADpJ/3y0Bq4mo13EOn8eSaDUm20XPgReX9sZgp9p2C5RaiJddmzYzWeuRQh5dar8<br />
+                Y9ADiZW9n9v2yAoi0xR5f4we88HxAA==<br />
+                =RgIR<br />
+                -----END PGP SIGNATURE-----</p></p>
+
+            </div>
+
+          </div>
+        <img class = "logos" src="Images/location.png">    London, U.K</a>
+
+
+
+
+
         </div>
+
+
+
 
 
       <div id ="menu">
 
+        <li  class ="menuList"><a  href="https://leetcode.com/viktorvamos/"><img class ="hvr-bob" src="Images/LeetCode_logo.png"></a></li>
+        <li  class ="menuList"><a  href="https://stackoverflow.com/users/9231706/james?tab=profile"><img class ="hvr-bob" src="Images/so-icon.png"></a></li>
         <li  class ="menuList"><a  href="https://github.com/hollandjames"><img class ="hvr-bob"src="Images/github.png"></a></li>
-        <li  class ="menuList"><a  href="https://twitter.com/J__holla"><img class ="hvr-bob" src="Images/twitter.png"></a></li>
-        <li  class ="menuList"><a  href="https://www.reddit.com/user/ViktorVamos/"><img class ="hvr-bob" src="Images/reddit.png"></a></li>
+
+
       </div>
 
       <div id = "navbar">
 
 <li ><a class = "navItem" href="About/"> About</a></li>
 <li> <a class ="navItem"href="Research/">Research</a></li>
+<li> <a class ="navItem"href="../">Projects</a></li>
 
       </div>
-
-      </div>
-
-
-
-      <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-        <div class ="projectList">
-        <h1>Projects</h1>
-        <h1>Projects</h1>
-        <h1>Projects</h1>
-        <h1>Projects</h1>
-        <h1>Projects</h1>
-        <h1>Projects</h1>
-        <h1>Projects</h1>
-        <h1>Projects</h1>
-
-      </div>
-
-      </div>
-
-
 
 
 
@@ -73,21 +109,70 @@
     </div>
 
 
+      <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+        <div class ="projectList">
+
+          <h1>Projects</h1>
+          <div class ="projText">
+
+        <p>Some personal projects to push my programming understanding and potentially make something useful...</p>
+      </div>
+<ul>
+      <a class = "projTitle" href ="chesspuzzles/"> Chess Tactics Trainer</a> <span class= "workYear"> (2018-present)</span>
+      <div class ="projText">
+<p>This is an interactive chess puzzle application, you can select a puzzle and attempt to solve it. </p>
+<b>Technologies:</b><p>JavaScript, Bootstrap, HTML5, CSS, JS Libraries(jQuery, chessJS, chessboardJS, notifyJS).</p>
+
+<a class = "projTitle" href ="RestaurantFinder/"> Restaurant Finder</a> <span class= "workYear"> (2018-present)</span>
+<div class ="projText">
+<p>Using the google maps API to find all the restaurants close to you and giving you a route to each one.</p>
+<b>Technologies:</b><p>Google Maps API, JavaScript </p>
+
+</div>
+
+</div>
+<a class = "projTitle" href ="CryptoClub/"> CryptoClub</a> <span class= "workYear"> (2018-present)...in progress</span>
+<div class ="projText">
+<p>A simple online shop which sells clothing. Users can add items to their basket, and pay using card or crypto-currency.</p>
+<b>Technologies:</b><p>JavaScript, Bootstrap, BitPay API  </p>
+
+</div>
+<a class = "projTitle" href ="caricatureportraits/"> Caricature Portraits</a> <span class= "workYear"> (2018-present)...in progress</span>
+<div class ="projText">
+<p>Website for an artist, challenging parts included auto mailer with image attachments.</p>
+<b>Technologies:</b><p>AJAX,PHP  </p>
+
+</div>
+
+
+      </ul>
+
+
+      </div>
+
+      </div>
+
+    </div>
+
+
 
 
 
 </div>
+</div>
+</div>
+
+
+<script src="particles.js"></script>
+<script src="js/app.js"></script>
+<script src="js/scripts.js"></script>
+
 <script>
 
-  function imgMessage()
-//extra stuff here
-//remove right click option?
+    dragImage();
+    loadModal();
 
-  {
-    window.alert("Don't click on my face!");
-  }
-
-</script>
+    </script>
 
 </body>
 </html>
